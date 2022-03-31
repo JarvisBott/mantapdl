@@ -1,0 +1,29 @@
+{
+  "name": " ❰🍁 AdhanMod 🍁❱  Media Downloader Bot",
+  "description": "A telegram bot To Download MEDIA VIDEOES,AUDIOES,DOCUMENT,PHOTO,VOICE, ",
+  "logo": "https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg",
+  "keywords": [
+    "Youtube","YoutubeDownloader","AdhanMod"
+  ],
+  "repository": "https://github.com/JarvisBott/mantapdl",
+  "success_url": "https://github.com/JarvisBott/mantapdl",
+  "website": "https://github.com/JarvisBott/mantapdl",
+  "env": {
+        "API_ID": {"description": "මෙම කේතය ගැනීම සදහා ඉදිරියේ ඇති ලින්ක් එක වෙත පිවිසෙන්න.. Get this value from https://my.telegram.org", "required": true},
+        "API_HASH": {"description": "මෙම කේතය ලබා ගැනීම සදහා ඉදිරියේ ඇති ලින්ක් එක වෙත පිවිසෙන්න.. Get this value from https://my.telegram.org" , "required": true},
+        "BOT_TOKEN": {"description": "ඔබගේ ටෙලිග්‍රෑම් බොට්ගේ API කී එක( BOT TOKEN ) ...Get Bot Token From BotFather Bot","required": true}
+  },
+      "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "heroku/python"}
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+      "stack": "heroku-20"
+
+
+}
